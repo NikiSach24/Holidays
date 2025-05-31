@@ -1,15 +1,19 @@
 @media (max-width: 699px) {
   .horse {
-    width: 90%;
-    left: 10%;
+    width: 100%;
+    height: auto;
+    left: 0%;
+    top: 40%;
   }
 }
 
 
 @media (min-width: 700px) {
   .horse {
-    height: 90%;
-    left: 30%;
+    width: auto;
+    height: 80%;
+    left: 5%;
+    top: 45%;
   }
 }
 
@@ -38,8 +42,8 @@ body {
 .horse {
   object-fit: cover;
   position: absolute;
-  top: 0%;
   user-select: none;
   touch-action: none;
-  transform: translate(-50%, 0%);
+  transform: translate(0%, -50%);
+  aspect-ratio: 1 / 1;
 }
