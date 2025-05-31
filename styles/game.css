@@ -1,0 +1,45 @@
+@media (max-width: 699px) {
+  .horse {
+    width: 90%;
+    left: 10%;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .horse {
+    height: 90%;
+    left: 30%;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  touch-action: none;
+}
+
+.bg_img {
+  height: 110%;
+  width: 110%;
+  object-fit: cover;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  filter: blur(5px);
+  user-select: none;
+  touch-action: none;
+}
+
+
+.horse {
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  user-select: none;
+  touch-action: none;
+  transform: translate(-50%, 0%);
+}
