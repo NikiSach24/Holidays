@@ -1,5 +1,5 @@
 @media (max-width: 699px) {
-  .horse {
+  .horse_main {
     width: 100%;
     height: auto;
     left: 0%;
@@ -9,11 +9,11 @@
 
 
 @media (min-width: 700px) {
-  .horse {
+  .horse_main {
     width: auto;
-    height: 80%;
+    height: 90%;
     left: 5%;
-    top: 45%;
+    top: 50%;
   }
 }
 
@@ -39,11 +39,30 @@ body {
 }
 
 
-.horse {
+.horse_main {
+  position: absolute;
+  touch-action: none;
+  transform: translate(0%, -50%);
+  aspect-ratio: 1 / 1;
+}
+
+#horse {
   object-fit: cover;
   position: absolute;
   user-select: none;
   touch-action: none;
-  transform: translate(0%, -50%);
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#head {
+  object-fit: cover;
+  position: absolute;
+  user-select: none;
+  touch-action: none;
+  width: 20%;
+  top: 1%;
+  left: 13%;
+  z-index: 100;
 }

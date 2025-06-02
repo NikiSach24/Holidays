@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  
+
   <link rel="stylesheet" href="styles/game.css"/>
   <link rel="stylesheet" href="styles/ui.css"/>
 
@@ -16,7 +16,10 @@
 <body>
   <img draggable=false class="bg_img" src="images/ground.png" />
 
-  <img draggable=false class="horse" src="images/horse.png" />
+  <div class="horse_main">
+    <img draggable=false id="head" src="" />
+    <img draggable=false id="horse" src="images/horse.png" />
+  </div>
   
   <div class="bar">
     <button id="button-head">
@@ -25,13 +28,12 @@
     <button id="button-body">
       <img draggable=false  src="icons/body.png" />
     </button>
-    <button id="button-foot">
-      <img draggable=false src="icons/foot.png" />
-    </button>
   </div>
 
   <button id="button-ready">
     Ready!
   </button>
+
+  <script src="scripts/gen.js"></script>
 </body>
 </html>

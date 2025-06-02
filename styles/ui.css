@@ -33,7 +33,7 @@
 @media (max-width: 699px) {
   .bar {
     top: 75%;
-    height: 10%;
+    height: 15%;
     flex-direction: row;
     left: 50%;
     width: 85%;
