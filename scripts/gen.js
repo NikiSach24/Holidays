@@ -26,11 +26,20 @@ const buttonHorse = document.getElementById("button-body");
 
 const objHead = document.getElementById("head");
 const objHorse = document.getElementById("horse");
+const objDHead = document.getElementById("head-double");
+const objDHorse = document.getElementById("horse-double");
+
+var imageHead = "";
+var imageHorse = "";
 
 buttonHead.addEventListener("click", () => {
-    objHead.src = imagesHead.next().value;
+    imageHead = imagesHead.next().value;
+    objHead.src = imageHead;
+    objDHead.src = imageHead;
 });
 
 buttonHorse.addEventListener("click", () => {
-    objHorse.src = imagesHorse.next().value;
+    imageHorse = imagesHorse.next().value;
+    objHorse.src = imageHorse;
+    objDHorse.src = imageHorse;
 });
